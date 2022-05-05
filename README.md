@@ -6,6 +6,7 @@ Há a mudança e exclusão de algumas coisas além do tema da página ser difere
 Este projeto tem como objetivo ser uma página tema do game Persona 5, trazendo informações sobre 
 os protagonistas (todas retiras [daqui](https://megamitensei.fandom.com/wiki/Phantom_Thieves_of_Hearts)).
 <br>
+#### Desktop
 <img src="./images/readme/record.gif" width="70%" />
 
 #### Mobile

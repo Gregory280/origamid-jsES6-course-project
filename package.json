@@ -1,0 +1,28 @@
+{
+  "name": "origamid-js-course-project",
+  "version": "1.0.0",
+  "description": "webpage based on origamid javascript course",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gregory280/origamid-jsES6-course-project.git"
+  },
+  "keywords": [
+    "javascript",
+    "persona5"
+  ],
+  "author": "Gregory Mayer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gregory280/origamid-jsES6-course-project/issues"
+  },
+  "homepage": "https://github.com/Gregory280/origamid-jsES6-course-project#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}

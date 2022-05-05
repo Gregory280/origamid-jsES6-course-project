@@ -272,6 +272,11 @@ body {
 .dropdown-menu li a:hover {
   color: white;
 }
+.votes {
+  color: #222!important;
+  opacity: .3;
+  font-size: 1.3rem!important;
+}
 
 /* Animations */
 @keyframes slideLeft {

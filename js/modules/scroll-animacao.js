@@ -1,19 +1,20 @@
-export default function initAnimationScroll(){
+export default function initAnimationScroll() {
   const sections = document.querySelectorAll('.js-scroll');
+  const windowMetade = window.innerHeight * 0.6;
+
+  function animationScroll() {
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const issectionVisible = (sectionTop - windowMetade) < 0;
+      if (issectionVisible) {
+        section.classList.add('active');
+      } else if (section.classList.contains('active')) {
+        section.classList.remove('active');
+      }
+    });
+  }
+
   if (sections.length) {
-    const screenHalf = window.innerHeight * 0.6;
-    function animationScroll() {
-      sections.forEach(function(item){
-        const itemTop = item.getBoundingClientRect().top;
-        const isItemVisible = (itemTop - screenHalf) < 0;
-        if (isItemVisible) {
-          item.classList.add('active');
-        }
-        else if(item.classList.contains('active')) {
-          item.classList.remove('active');
-        }
-      })
-    }
     animationScroll();
     window.addEventListener('scroll', animationScroll);
   }

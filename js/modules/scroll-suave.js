@@ -1,4 +1,4 @@
-export default function initScrollSuave(){
+export default function initScrollSuave() {
   const pageAnchors = document.querySelectorAll('.js-menu a[href^="#');
   function scrollToSection(event) {
     event.preventDefault();
@@ -6,10 +6,10 @@ export default function initScrollSuave(){
     const section = document.querySelector(href);
     section.scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
-    })
+      block: 'start',
+    });
   }
-  pageAnchors.forEach(function(item){
+  pageAnchors.forEach((item) => {
     item.addEventListener('click', scrollToSection);
   });
 }

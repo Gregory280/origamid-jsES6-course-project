@@ -1,4 +1,4 @@
-## Projeto do curso Javascript Completo ES6
+## Projeto do curso JS ES6 da Origamid
 Esta projeto foi espalhado na página original realizado no curso de JS ES6 da Origamid.
 Há a mudança e exclusão de algumas coisas além do tema da página ser diferente.
 

@@ -13,6 +13,13 @@ export default class TabNav {
     this.tabContent[index].classList.add(this.activeClass);
   }
 
+  // Método para adicionar os eventos nas tabs
+  addTabNavEvent() {
+    this.tabMenu.forEach((item, index) => {
+      item.addEventListener('click', () => this.activeTab(index));
+    });
+  }
+
   // Método para iniciar
   init() {
     // Ativará o tab se o array (conteúdo) existir
@@ -20,12 +27,6 @@ export default class TabNav {
       this.activeTab(0); // Ativa o primeiro item
       this.addTabNavEvent();
     }
-  }
-
-  // Método para adicionar os eventos nas tabs
-  addTabNavEvent() {
-    this.tabMenu.forEach((item, index) => {
-      item.addEventListener('click', () => this.activeTab(index));
-    });
+    return this;
   }
 }

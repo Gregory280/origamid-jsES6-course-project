@@ -338,11 +338,11 @@ body {
   align-items: center;
 }
 
-.modal-container.ativo {
+.modal-container.active {
   display: flex;
 }
 
-.ativo .modal {
+.active .modal {
   animation: modal .6s forwards;
 }
 

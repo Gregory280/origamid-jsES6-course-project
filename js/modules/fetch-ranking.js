@@ -1,4 +1,4 @@
-import initAnimaNumeros from './numbers-animation.js';
+import AnimaNumeros from './numbers-animation.js';
 
 export default function initFetchRanking() {
   function createData(character) {
@@ -17,7 +17,8 @@ export default function initFetchRanking() {
         const divRanking = createData(character);
         numerosGrid.appendChild(divRanking);
       });
-      initAnimaNumeros();
+      const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros', 'active');
+      animaNumeros.init();
     } catch (erro) {
       console.log(erro);
     }

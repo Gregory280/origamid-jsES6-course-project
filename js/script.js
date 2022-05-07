@@ -1,5 +1,5 @@
 import ScrollSuave from './modules/scroll-suave.js';
-import initAnimationScroll from './modules/scroll-animacao.js';
+import ScrollAnimation from './modules/scroll-animation.js';
 import Accordion from './modules/accordian.js';
 import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
@@ -23,9 +23,10 @@ modal.init();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
-fetchRanking('../../ranking.json', '.numeros-grid');
+const scrollAnimation = new ScrollAnimation('.js-scroll');
+scrollAnimation.init();
 
-initAnimationScroll();
+fetchRanking('../../ranking.json', '.numeros-grid');
 
 initDropdownMenu();
 initMenuMobile();

@@ -1,8 +1,10 @@
+import debounce from '../helpers/debounce';
+
 export default class ScrollAnimation {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections);
     this.windowMetade = window.innerHeight * 0.6;
-    this.checkDistance = this.checkDistance.bind(this);
+    this.checkDistance = debounce(this.checkDistance.bind(this), 100);
   }
 
   // Pega a distância de cada item em relação ao topo do site

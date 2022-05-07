@@ -179,7 +179,7 @@ body {
   padding:4px;
   font-family: monospace;
   font-weight: 300;
-  opacity: .2;
+  opacity: .4;
 }
 .copy {
   grid-column: 3/5;

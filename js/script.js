@@ -5,7 +5,7 @@ import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
-import initFetchRanking from './modules/fetch-ranking.js';
+import fetchRanking from './modules/fetch-ranking.js';
 import Tooltip from './modules/tooltip.js';
 
 const scrollSuave = new ScrollSuave('.js-menu a[href^="#');
@@ -23,8 +23,9 @@ modal.init();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
+fetchRanking('../../ranking.json', '.numeros-grid');
+
 initAnimationScroll();
 
 initDropdownMenu();
 initMenuMobile();
-initFetchRanking();

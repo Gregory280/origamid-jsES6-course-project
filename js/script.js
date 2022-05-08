@@ -3,7 +3,7 @@ import ScrollAnimation from './modules/scroll-animation.js';
 import Accordion from './modules/accordian.js';
 import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
-import initDropdownMenu from './modules/dropdown-menu.js';
+import DropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import fetchRanking from './modules/fetch-ranking.js';
 import Tooltip from './modules/tooltip.js';
@@ -26,7 +26,8 @@ tooltip.init();
 const scrollAnimation = new ScrollAnimation('.js-scroll');
 scrollAnimation.init();
 
-fetchRanking('../../ranking.json', '.numeros-grid');
+const dropdownMenu = new DropdownMenu('[data-dropdown]');
+dropdownMenu.init();
 
-initDropdownMenu();
+fetchRanking('../../ranking.json', '.numeros-grid');
 initMenuMobile();

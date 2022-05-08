@@ -4,7 +4,7 @@ import Accordion from './modules/accordian.js';
 import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
 import DropdownMenu from './modules/dropdown-menu.js';
-import initMenuMobile from './modules/menu-mobile.js';
+import MenuMobile from './modules/menu-mobile.js';
 import fetchRanking from './modules/fetch-ranking.js';
 import Tooltip from './modules/tooltip.js';
 
@@ -29,5 +29,7 @@ scrollAnimation.init();
 const dropdownMenu = new DropdownMenu('[data-dropdown]');
 dropdownMenu.init();
 
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
+
 fetchRanking('../../ranking.json', '.numeros-grid');
-initMenuMobile();

@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/Gregory280/origamid-jsES6-course-project/issues"
   },
-  "homepage": "https://github.com/Gregory280/origamid-jsES6-course-project#readme",
+  "homepage": "https://gregory280.github.io/origamid-jsES6-course-project/",
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/plugin-transform-runtime": "^7.17.10",

@@ -32,4 +32,4 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-fetchRanking('../ranking.json', '.numeros-grid');
+fetchRanking('./ranking.json', '.numeros-grid');

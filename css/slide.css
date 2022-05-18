@@ -1,4 +1,4 @@
-.galeria {
+.gallery {
   grid-column: 1 / -1;
 }
 
@@ -22,10 +22,10 @@
   margin: 0 20px;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0,0,0,.4);
-  opacity: .8;
-  transform: scale(.8);
-  transition: .4s;
+  box-shadow: 0 5px 6px rgba(0,0,0,.5);
+  opacity: .7;
+  transform: scale(.7);
+  transition: .8s;
 }
 
 .slide li.active {
@@ -42,8 +42,8 @@
 }
 
 .custom-controls li {
-  opacity: .8;
-  transform: scale(.8);
+  opacity: .6;
+  transform: scale(.7);
   width: 40px;
   height: 40px;
   border-radius: 50%;

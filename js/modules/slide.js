@@ -56,7 +56,7 @@ export class Slide {
   }
 
   updatePosition(clientX) {
-    this.dist.totalMovement = (this.dist.startX - clientX) * 1.3;
+    this.dist.totalMovement = (this.dist.startX - clientX) * 1.6;
     return this.dist.finalPosition - this.dist.totalMovement;
   }
 
@@ -142,7 +142,7 @@ export class Slide {
     this.onStart = this.onStart.bind(this);
     this.onMove = this.onMove.bind(this);
     this.onEnd = this.onEnd.bind(this);
-    this.onResize = debounce(this.onResize(this), 300);
+    this.onResize = debounce(this.onResize.bind(this), 300);
     this.activePrevSlide = this.activePrevSlide.bind(this);
     this.activeNextSlide = this.activeNextSlide.bind(this);
   }

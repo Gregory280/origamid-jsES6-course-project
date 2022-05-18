@@ -7,6 +7,7 @@ import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
 import fetchRanking from './modules/fetch-ranking.js';
 import Tooltip from './modules/tooltip.js';
+import SlideNav from './modules/slide.js';
 
 const scrollSuave = new ScrollSuave('.js-menu a[href^="#');
 scrollSuave.init();
@@ -33,3 +34,7 @@ const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
 fetchRanking('./ranking.json', '.numeros-grid');
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl('.custom-controls');

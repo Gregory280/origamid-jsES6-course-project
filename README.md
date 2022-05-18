@@ -9,6 +9,7 @@ os protagonistas ([fonte](https://megamitensei.fandom.com/wiki/Phantom_Thieves_o
 #### Desktop
 <img src="./images/readme/record.gif" width="70%" />
 <img src="./images/readme/slide.gif" width=70% />
+
 #### Mobile
 <img src="./images/readme/mobile_1.jpg" width="50%" />
 <img src="./images/readme/mobile_2.png" width="50%" />
